@@ -76,7 +76,6 @@
         </div>
         <div class="col-lg-5 order-1 order-lg-2">
           <div class="profile-card text-center">
-            <span class="profile-status">Open to work</span>
             <!-- Profile image from images folder -->
             <img src="images/1x1 photo.jpg" alt="Aaron Crisologo profile photo" class="profile-img" />
             <h3 class="mt-3 mb-0">Aaron Crisologo</h3>
@@ -264,13 +263,14 @@
           <div class="form-card">
             <form action="#contact" method="post">
               <div class="row">
+                <h5 class="contact-info-title">Contact Me</h5>
                 <div class="col-md-6 mb-3">
                   <label for="name" class="form-label">Full Name</label>
                   <input type="text" class="form-control" id="name" name="name" placeholder="Aaron Crisologo" required />
                 </div>
                 <div class="col-md-6 mb-3">
                   <label for="email" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required />
+                  <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com" required />
                 </div>
               </div>
               <div class="mb-3">
@@ -287,21 +287,48 @@
         </div>
         <div class="col-lg-5">
           <div class="contact-info-card">
-            <h5>Contact Information</h5>
-            <p><strong>Email:</strong> aaronangelodcrisologo@gmail.com</p>
-            <p><strong>Location:</strong> Makati, Philippines</p>
-            <p><strong>Role:</strong> Full Stack Web Developer</p>
-            <hr />
-            <p class="text-muted">Connect with me:</p>
+            <h5 class="contact-info-title">Contact Information</h5>
+
+            <div class="contact-info-item">
+              <span class="contact-info-icon icon-email"><i class="bi bi-envelope-fill"></i></span>
+              <div class="contact-info-body">
+                <span class="contact-info-label">Direct Email</span>
+                <span class="contact-info-value">aaronangelodcrisologo@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-info-icon icon-location"><i class="bi bi-geo-alt-fill"></i></span>
+              <div class="contact-info-body">
+                <span class="contact-info-label">Primary Base</span>
+                <span class="contact-info-value">Makati, Philippines</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-info-icon icon-role"><i class="bi bi-briefcase-fill"></i></span>
+              <div class="contact-info-body">
+                <span class="contact-info-label">Role</span>
+                <span class="contact-info-value">Full Stack Web Developer</span>
+              </div>
+            </div>
+
+            <hr class="contact-divider" />
+            <p class="text-muted mb-2">Connect with me:</p>
             <div class="d-flex gap-3 social-icons">
               <a href="https://github.com/AaronCrisologo" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
               <a href="https://www.linkedin.com/in/aaron-angelo-crisologo-4a1b97364/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
               <a href="#landing" aria-label="Portfolio" title="Portfolio"><i class="bi bi-globe"></i></a>
             </div>
-            <!-- QR / extra placeholder -->
-            <div class="mt-4 text-center">
+          </div>
+
+          <div class="qr-card">
+            <div class="qr-code">
               <img src="https://placehold.co/120x120?text=QR" alt="Contact QR placeholder" class="img-fluid rounded" />
-              <p class="small text-muted mt-2">Scan to connect</p>
+            </div>
+            <div class="qr-body">
+              <h6 class="qr-title">Instant Contact Sync</h6>
+              <p class="qr-text">Scan camera directly to download mobile contact profile, portfolio &amp; credentials.</p>
             </div>
           </div>
         </div>
@@ -311,13 +338,10 @@
 
   <footer class="footer">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <p class="mb-2 mb-md-0">© 2026 Aaron Crisologo • Full Stack Web Developer</p>
-      <div>
-        <a href="#landing" class="footer-link">Home</a>
-        <a href="#projects" class="footer-link">Projects</a>
-        <a href="#tools" class="footer-link">Tools</a>
-        <a href="#contact" class="footer-link">Contacts</a>
+      <div class="text-center text-md-start">
+        <p class="mb-0 fw-bold">Aaron Crisologo // Full Stack Web Developer</p>
       </div>
+      <p class="mb-2 mb-md-0">© 2026 All Rights Reserved</p>
     </div>
   </footer>
 
